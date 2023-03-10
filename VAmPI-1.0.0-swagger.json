@@ -1,0 +1,363 @@
+{
+  "id" : "76108ce1-9c4f-4dc2-af46-74b8dc05ac30",
+  "name" : "VAmPI",
+  "timestamp" : "2023-03-10T07:36:59.747Z",
+  "collection_id" : "14388568-5950912d-ad7e-4bd7-a0ec-93d5aa8f6956",
+  "folder_id" : 0,
+  "environment_id" : "14388568-03da96d8-f8bd-443c-ba16-42521698a878",
+  "totalPass" : 16,
+  "delay" : 0,
+  "persist" : true,
+  "status" : "finished",
+  "startedAt" : "2023-03-10T07:36:51.716Z",
+  "totalFail" : 0,
+  "results" : [ {
+    "id" : "89234d19-064e-4e06-841a-88d8d66bd32d",
+    "name" : "Creates and populates the database with dummy data",
+    "url" : "http://43.206.116.53/createdb",
+    "time" : 495,
+    "responseCode" : {
+      "code" : 200,
+      "name" : "OK"
+    },
+    "tests" : {
+      "Status code is 200" : true
+    },
+    "testPassFailCounts" : {
+      "Status code is 200" : {
+        "pass" : 1,
+        "fail" : 0
+      }
+    },
+    "times" : [ 495 ],
+    "allTests" : [ {
+      "Status code is 200" : true
+    } ]
+  }, {
+    "id" : "7ba9f6b6-38df-4da8-8800-6aae8f521142",
+    "name" : "VAmPI home",
+    "url" : "http://43.206.116.53/",
+    "time" : 544,
+    "responseCode" : {
+      "code" : 200,
+      "name" : "OK"
+    },
+    "tests" : {
+      "Status code is 200" : true
+    },
+    "testPassFailCounts" : {
+      "Status code is 200" : {
+        "pass" : 1,
+        "fail" : 0
+      }
+    },
+    "times" : [ 544 ],
+    "allTests" : [ {
+      "Status code is 200" : true
+    } ]
+  }, {
+    "id" : "840de362-ec64-4583-9816-4fda3c2ff097",
+    "name" : "Retrieves user by username",
+    "url" : "http://43.206.116.53/users/v1/name1",
+    "time" : 581,
+    "responseCode" : {
+      "code" : 200,
+      "name" : "OK"
+    },
+    "tests" : {
+      "Status code is 200" : true
+    },
+    "testPassFailCounts" : {
+      "Status code is 200" : {
+        "pass" : 1,
+        "fail" : 0
+      }
+    },
+    "times" : [ 581 ],
+    "allTests" : [ {
+      "Status code is 200" : true
+    } ]
+  }, {
+    "id" : "c363b8d6-9197-413a-8fe9-39432339e836",
+    "name" : "Retrieves all users",
+    "url" : "http://43.206.116.53/users/v1",
+    "time" : 593,
+    "responseCode" : {
+      "code" : 200,
+      "name" : "OK"
+    },
+    "tests" : {
+      "Status code is 200" : true
+    },
+    "testPassFailCounts" : {
+      "Status code is 200" : {
+        "pass" : 1,
+        "fail" : 0
+      }
+    },
+    "times" : [ 593 ],
+    "allTests" : [ {
+      "Status code is 200" : true
+    } ]
+  }, {
+    "id" : "e823ec73-36af-4e72-a112-a0094964193c",
+    "name" : "Retrieves all details for all users (debug)",
+    "url" : "http://43.206.116.53/users/v1/_debug",
+    "time" : 509,
+    "responseCode" : {
+      "code" : 200,
+      "name" : "OK"
+    },
+    "tests" : {
+      "Status code is 200" : true
+    },
+    "testPassFailCounts" : {
+      "Status code is 200" : {
+        "pass" : 1,
+        "fail" : 0
+      }
+    },
+    "times" : [ 509 ],
+    "allTests" : [ {
+      "Status code is 200" : true
+    } ]
+  }, {
+    "id" : "19634186-c337-4f6b-8e3a-eda08cabf18c",
+    "name" : "Retrieves all books",
+    "url" : "http://43.206.116.53/books/v1",
+    "time" : 548,
+    "responseCode" : {
+      "code" : 200,
+      "name" : "OK"
+    },
+    "tests" : {
+      "Status code is 200" : true
+    },
+    "testPassFailCounts" : {
+      "Status code is 200" : {
+        "pass" : 1,
+        "fail" : 0
+      }
+    },
+    "times" : [ 548 ],
+    "allTests" : [ {
+      "Status code is 200" : true
+    } ]
+  }, {
+    "id" : "d6f1a4e5-6dcc-4a44-968a-3a308e5a4311",
+    "name" : "Register new user",
+    "url" : "http://43.206.116.53/users/v1/register",
+    "time" : 588,
+    "responseCode" : {
+      "code" : 200,
+      "name" : "OK"
+    },
+    "tests" : {
+      "Status code is 200" : true,
+      "New user successfully registered" : true
+    },
+    "testPassFailCounts" : {
+      "Status code is 200" : {
+        "pass" : 1,
+        "fail" : 0
+      },
+      "New user successfully registered" : {
+        "pass" : 1,
+        "fail" : 0
+      }
+    },
+    "times" : [ 588 ],
+    "allTests" : [ {
+      "Status code is 200" : true,
+      "New user successfully registered" : true
+    } ]
+  }, {
+    "id" : "27399b49-0272-403a-97fb-d6d0434e3c2e",
+    "name" : "Login to VAmPI",
+    "url" : "http://43.206.116.53/users/v1/login",
+    "time" : 594,
+    "responseCode" : {
+      "code" : 200,
+      "name" : "OK"
+    },
+    "tests" : {
+      "Status code is 200" : true,
+      "Successfully logged in" : true
+    },
+    "testPassFailCounts" : {
+      "Status code is 200" : {
+        "pass" : 1,
+        "fail" : 0
+      },
+      "Successfully logged in" : {
+        "pass" : 1,
+        "fail" : 0
+      }
+    },
+    "times" : [ 594 ],
+    "allTests" : [ {
+      "Status code is 200" : true,
+      "Successfully logged in" : true
+    } ]
+  }, {
+    "id" : "4c872dae-38fa-4122-998a-fe6642bfa91b",
+    "name" : "Add new book",
+    "url" : "http://43.206.116.53/books/v1",
+    "time" : 561,
+    "responseCode" : {
+      "code" : 200,
+      "name" : "OK"
+    },
+    "tests" : {
+      "Status code is 200" : true,
+      "Book added Successfully" : true
+    },
+    "testPassFailCounts" : {
+      "Status code is 200" : {
+        "pass" : 1,
+        "fail" : 0
+      },
+      "Book added Successfully" : {
+        "pass" : 1,
+        "fail" : 0
+      }
+    },
+    "times" : [ 561 ],
+    "allTests" : [ {
+      "Status code is 200" : true,
+      "Book added Successfully" : true
+    } ]
+  }, {
+    "id" : "34fabbb2-b586-497e-b5b3-ee03f80eb199",
+    "name" : "Retrieves book by title along with secret",
+    "url" : "http://43.206.116.53/books/v1/my test book",
+    "time" : 585,
+    "responseCode" : {
+      "code" : 200,
+      "name" : "OK"
+    },
+    "tests" : {
+      "Status code is 200" : true
+    },
+    "testPassFailCounts" : {
+      "Status code is 200" : {
+        "pass" : 1,
+        "fail" : 0
+      }
+    },
+    "times" : [ 585 ],
+    "allTests" : [ {
+      "Status code is 200" : true
+    } ]
+  }, {
+    "id" : "558742b8-f191-4e97-8fff-f32b698a203f",
+    "name" : "Update users email",
+    "url" : "http://43.206.116.53/users/v1/test1/email",
+    "time" : 590,
+    "responseCode" : {
+      "code" : 204,
+      "name" : "NO CONTENT"
+    },
+    "tests" : {
+      "Status code is 204" : true
+    },
+    "testPassFailCounts" : {
+      "Status code is 204" : {
+        "pass" : 1,
+        "fail" : 0
+      }
+    },
+    "times" : [ 590 ],
+    "allTests" : [ {
+      "Status code is 204" : true
+    } ]
+  }, {
+    "id" : "1f106d9e-cf75-4191-8f11-4cbb3def1d6b",
+    "name" : "Update users password",
+    "url" : "http://43.206.116.53/users/v1/test1/password",
+    "time" : 473,
+    "responseCode" : {
+      "code" : 204,
+      "name" : "NO CONTENT"
+    },
+    "tests" : {
+      "Status code is 204" : true
+    },
+    "testPassFailCounts" : {
+      "Status code is 204" : {
+        "pass" : 1,
+        "fail" : 0
+      }
+    },
+    "times" : [ 473 ],
+    "allTests" : [ {
+      "Status code is 204" : true
+    } ]
+  }, {
+    "id" : "75e9439e-2a49-429e-a2fd-f3f98850a85f",
+    "name" : "Deletes user by username (Only Admins)",
+    "url" : "http://43.206.116.53/users/v1/test1",
+    "time" : 589,
+    "responseCode" : {
+      "code" : 401,
+      "name" : "UNAUTHORIZED"
+    },
+    "tests" : {
+      "Status code is 401" : true
+    },
+    "testPassFailCounts" : {
+      "Status code is 401" : {
+        "pass" : 1,
+        "fail" : 0
+      }
+    },
+    "times" : [ 589 ],
+    "allTests" : [ {
+      "Status code is 401" : true
+    } ]
+  } ],
+  "count" : 1,
+  "totalTime" : 7250,
+  "collection" : {
+    "requests" : [ {
+      "id" : "89234d19-064e-4e06-841a-88d8d66bd32d",
+      "method" : "GET"
+    }, {
+      "id" : "7ba9f6b6-38df-4da8-8800-6aae8f521142",
+      "method" : "GET"
+    }, {
+      "id" : "840de362-ec64-4583-9816-4fda3c2ff097",
+      "method" : "GET"
+    }, {
+      "id" : "c363b8d6-9197-413a-8fe9-39432339e836",
+      "method" : "GET"
+    }, {
+      "id" : "e823ec73-36af-4e72-a112-a0094964193c",
+      "method" : "GET"
+    }, {
+      "id" : "19634186-c337-4f6b-8e3a-eda08cabf18c",
+      "method" : "GET"
+    }, {
+      "id" : "d6f1a4e5-6dcc-4a44-968a-3a308e5a4311",
+      "method" : "POST"
+    }, {
+      "id" : "27399b49-0272-403a-97fb-d6d0434e3c2e",
+      "method" : "POST"
+    }, {
+      "id" : "4c872dae-38fa-4122-998a-fe6642bfa91b",
+      "method" : "POST"
+    }, {
+      "id" : "34fabbb2-b586-497e-b5b3-ee03f80eb199",
+      "method" : "GET"
+    }, {
+      "id" : "558742b8-f191-4e97-8fff-f32b698a203f",
+      "method" : "PUT"
+    }, {
+      "id" : "1f106d9e-cf75-4191-8f11-4cbb3def1d6b",
+      "method" : "PUT"
+    }, {
+      "id" : "75e9439e-2a49-429e-a2fd-f3f98850a85f",
+      "method" : "DELETE"
+    } ]
+  }
+}
